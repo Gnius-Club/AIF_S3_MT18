@@ -1,24 +1,289 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-S3-M18</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 18: Dando Vida al Gemelo Digital</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Esta misión introduce JavaScript para crear visualizaciones de datos dinámicas y reactivas.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Secuencia y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes integren JavaScript en su Gemelo Digital para crear visualizaciones dinámicas.</li>
+                                        <li>Que aprendan a usar JavaScript para manipular el CSS de elementos HTML basándose en datos de ThingSpeak.</li>
+                                        <li>Que su interfaz reaccione y cambie en tiempo real, consolidando el concepto de Gemelo Digital "vivo".</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Análisis profundo y contextualización de la misión con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
+                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos, síntesis de "insights" y reflexión iterativa.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un Plugin de ThingSpeak con código HTML, CSS y JavaScript que crea una visualización dinámica (ej. una barra que cambia de altura, un color que cambia por umbral).</li>
+                                        <li>Comprensión demostrada del rol de JavaScript en la manipulación del DOM y de la depuración de JS con la consola del navegador.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Cuentas de ThingSpeak con un Gemelo Digital estático de la misión anterior.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) operativo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Verificación del Entorno Digital y Físico (Interna):</strong>
+                                            <ul>
+                                                <li>Asegurar que los estudiantes tengan su esqueleto de Gemelo Digital listo en un Plugin de ThingSpeak.</li>
+                                                <li>Familiarizarse con la Consola de las Herramientas de Desarrollador del navegador para guiar la depuración de JS.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar los conceptos básicos de manipulación del DOM con JS (`querySelector`, `getElementById`, `element.style`). Entender el error común `Cannot read properties of null`.</li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener una solución funcional del Gemelo de la planta con la barra de humedad dinámica y la alerta de temperatura para ilustrar la implementación de JS.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Establecer el tono de la sesión, activar la IA y presentar la introducción de JavaScript para el dinamismo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto Estratégico</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque de la misión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Buenos días, desarrolladores. Tenemos un esqueleto hermoso y bien estructurado. Pero está estático. Es una foto. Hoy, vamos a convertir esa foto en una película. Le inyectaremos vida con JavaScript, el lenguaje que le da interactividad y dinamismo a la web. Hoy, su Gemelo Digital comenzará a 'respirar'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación y Personalización de Xolo</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Inicien su sesión con Xolo como de costumbre, compartiendo su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo. Soy Ana, perfil Piloto, y hoy quiero que mi dashboard reaccione tan rápido como los instrumentos de una cabina.'</strong> Procedan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 2 minutos</h2>
+                <p>Clarificar la meta de aprendizaje enfocada en la creación de interfaces dinámicas con JavaScript.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: "I Can Statement" de Dinamismo</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">La meta de hoy es darle vida a sus creaciones. Al finalizar esta sesión, podrán afirmar: <strong>'Yo puedo usar JavaScript para manipular el CSS de mi interfaz y crear una visualización de datos que reacciona en tiempo real.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (JavaScript y Manipulación del DOM) ⏰ 10 minutos</h2>
+                <p>Facilitar una sesión de aprendizaje sobre el rol de JavaScript y cómo puede modificar dinámicamente el estilo de una página.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción para el Aprendizaje Conceptual</h3>
+                            <p>(Proyectar Diapositiva 4 y 5) El facilitador dirige a los alumnos para que aprendan sobre JS y la manipulación de estilos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Iniciamos el A.I. GYM. Su aprendizaje con Xolo hoy es sobre el 'sistema nervioso' del Front-End. Primero, pregunten: <strong>'Xolo, ¿cuál es el rol de JavaScript en una página web?'</strong> Una vez que lo entiendan, profundicen: <strong>'Ahora, explícame qué significa que JavaScript puede "manipular el estilo" de un elemento y cómo lo hace.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Supervisión y Guía del Facilitador</h3>
+                            <p>El facilitador circula, refuerza conceptos y sugiere preguntas de profundización.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mientras circula) "La idea de que JS puede cambiar el CSS es poderosa. Para asegurarse de que lo entienden, pregúntenle a Xolo: <strong>'¿Puede JavaScript añadir una clase CSS nueva a un elemento que no la tenía?'</strong> O, <strong>'Además de `height` y `backgroundColor`, ¿qué otra propiedad de estilo común podría manipular JavaScript en un dashboard?'</strong> El objetivo es que vean el potencial ilimitado de esta técnica."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Creación de UI Viva) ⏰ 22 minutos</h2>
+                <p>Los estudiantes añaden dinamismo a sus Gemelos Digitales utilizando JavaScript para manipular el CSS.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
+                             <p>(Proyectar Diapositiva 6) El facilitador presenta el desafío de dinamismo y da la instrucción de formar parejas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, a darle vida a su Gemelo. Formen sus parejas. Su misión es elegir un elemento de su interfaz y definir una 'vibe' para una reacción dinámica. ¿Cómo cambiará visualmente ese elemento cuando cambie el dato del sensor? El objetivo es crear movimiento o reacción.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Diseño de la "Vibe" Dinámica y Generación de Código</h3>
+                            <p>(Proyectar Diapositiva 7) Las parejas diseñan la interacción, la comunican a Xolo y reciben el código JS.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Describan esta animación o cambio de estilo a Xolo para que genere el código JavaScript necesario. Por ejemplo: <strong>'Xolo, queremos que la altura de nuestra barra de humedad cambie dinámicamente con el valor del Campo 1. Además, si la temperatura del Campo 2 supera los 30, queremos que el fondo de esa tarjeta se vuelva rojo.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Implementación y Depuración de JavaScript</h3>
+                             <p>(Proyectar Diapositiva 8 y 9) Las parejas implementan el código JS y aprenden a depurarlo con la consola del navegador.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Añadan el nuevo bloque `<script>` a su Plugin. La depuración de JavaScript se hace en la 'Consola' de las herramientas de desarrollador del navegador. Si hay un error, el navegador lo reportará ahí. Si ven un error como `Cannot read properties of null`, descríbanlo a Xolo. Él los guiará para verificar que los selectores en su JS (`querySelector`, `getElementById`) coincidan exactamente con las clases e IDs de su HTML.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Reflexión) ⏰ 5 minutos</h2>
+                <p>El facilitador modera una reflexión final enfocada en el impacto del dinamismo en la experiencia del usuario.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
+                            <p>(Proyectar Diapositiva 10) Instrucción para la reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Bien, para cerrar, nuestro Think-Pair-Share. Miren su Gemelo Digital 'vivo'. Individualmente, un minuto para pensar: ¿Qué otra animación o reacción dinámica le añadirían para hacerlo aún más informativo o atractivo?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Pair - Parejas)</h3>
+                            <p>Los alumnos discuten la importancia del feedback en tiempo real.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, en parejas, discutan durante dos minutos: ¿Por qué el dinamismo y el feedback en tiempo real son tan importantes en las interfaces que usamos todos los días?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Share & Synthesis)</h3>
+                            <p>Algunas parejas muestran sus Gemelos dinámicos y el facilitador cierra la sesión.</p>
+                        </div>
+                        <div class="collapsible-content">
+                                <p class="dialogue assistant">Escuchemos a algunas parejas. Muestren su Gemelo Digital dinámico y expliquen la reacción que implementaron. (Escuchar respuestas). Han dado el salto de diseñadores estáticos a desarrolladores interactivos. Han aprendido a usar JavaScript para cerrar el bucle entre los datos y la experiencia del usuario. Su Gemelo Digital ya no es una foto, es un sistema vivo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
